@@ -2,13 +2,19 @@ const visit = require(`unist-util-visit`)
 const remarkMath = require(`remark-math`)
 const mjAPI = require("mathjax-node");
 
+mjAPI.config({
+  MathJax: {}
+});
+mjAPI.start();
+
 module.exports = async ({ markdownAST }, pluginOptions = {}) => {
   const nodes = [];
 
-  mjAPI.config({
+  // for some reason this doesn't work:
+  /*mjAPI.config({
     MathJax: pluginOptions
   });
-  mjAPI.start();
+  mjAPI.start();*/
 
   visit(markdownAST, `inlineMath`, node => {
     nodes.push({ node, format: 'inline-TeX' })
