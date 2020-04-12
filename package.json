@@ -28,6 +28,11 @@
     "url": "https://github.com/janmarthedal/gatsby-remark-mathjax-ssr/issues"
   },
   "scripts": {
-    "build": "node scripts/make-mathjax-css.js"
+    "build": "node scripts/make-mathjax-css.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^25.3.0",
+    "remark": "^12.0.0"
   }
 }
