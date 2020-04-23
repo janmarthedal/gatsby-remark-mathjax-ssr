@@ -38,7 +38,7 @@ module.exports = async ({ markdownAST }, pluginOptions = {}) => {
         } else
           reject(data.errors)
       })
-    })  
+    })
   }
 }
 

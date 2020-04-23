@@ -1,7 +1,7 @@
 {
   "name": "gatsby-remark-mathjax-ssr",
   "description": "Transform math nodes to html markup",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "Jan Marthedal Rasmussen <jan@janmr.com>",
   "homepage": "https://github.com/janmarthedal/gatsby-remark-mathjax-ssr#gatsby-remark-mathjax-ssr",
   "dependencies": {
